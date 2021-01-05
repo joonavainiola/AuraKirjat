@@ -1,0 +1,25 @@
+.signupsuccess__content div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupsuccess__content h2 {
+    margin: 10px 0;
+}
+
+.signupsuccess__content .fa-check {
+    font-size: 30px;
+    color: #f2c94c;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+    .signupsuccess__content h2 {
+        font-size: 20px;
+    }
+
+    .signupsuccess__content .fa-check {
+        font-size: 25px;
+    }
+}

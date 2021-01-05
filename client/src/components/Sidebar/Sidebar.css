@@ -1,0 +1,117 @@
+.sidebar__container {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    min-width: 260px;
+    max-width: 260px;
+    height: auto;
+    background-color: #d8d8d8;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 25px 0 0 25px;
+}
+
+.sidebar__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.sidebar__link {
+    color: #2a2924;
+    border-bottom: 3px solid white;
+    border-left: 7px solid #2a2924;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0 5px 10px;
+    margin-bottom: 25px;
+    text-align: left;
+    transition: 0.4s;
+}
+
+.sidebar__link:hover {
+    padding-left: 16px;
+}
+
+.exit-button {
+    display: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .sidebar__container {
+        min-width: 220px;
+        max-width: 220px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .sidebar__container {
+        min-width: 100%;
+        max-width: 100%;
+        background: rgba(242, 201, 76, 0.9);
+        text-align: left;
+        position: fixed;
+        border: none;
+        padding: 0;
+        top: 0;
+        z-index: 1;
+        height: 100vh;
+        left: -100%;
+        transition: 350ms;
+    }
+
+    .show-sidebar {
+        left: 0;
+    }
+
+    .sidebar__content {
+        width: 400px;
+        height: 100%;
+        background-color: #2a2924;
+        /* background-color: pink; */
+        padding: 80px 40px 0 40px;
+        transition: 550ms;
+        position: relative;
+    }
+
+    .sidebar__link {
+        border-left: none;
+        padding-left: 0;
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .sidebar__link:hover {
+        padding-left: 10px;
+    }
+    
+    .exit-button {
+        display: inline;
+        text-align: left;
+        position: absolute;
+        top: 20px;
+        right: -23px;
+        cursor: pointer;
+    }
+
+    .exit-button i {
+        margin: 0;
+        padding: 2px 6px;
+        background: linear-gradient(#fcdd7f, #f2c94c);
+        border-radius: 50%;
+        border: 5px solid #2a2924;
+        color: #2a2924;
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sidebar__content {
+        width: 90%;
+    }
+}

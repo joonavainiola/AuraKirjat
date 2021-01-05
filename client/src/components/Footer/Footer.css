@@ -1,0 +1,140 @@
+.footer__container {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #f2c94c;
+    color: white;
+    min-height: 550px;
+    max-height: 550px;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.footer__logo {
+    max-width: 260px;
+    padding: 0 20px 50px 20px;
+}
+
+.footer__logo img {
+    width: 100%;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 40px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.footer__info {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+}
+
+.footer__info h1 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    color: #2a2924;
+    text-decoration-line: underline;
+    text-decoration-color: #9b9b9b;
+}
+
+.footer__info p {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer__info p:hover {
+    text-decoration: underline;
+}
+
+.footer__some {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.footer__some i {
+    margin-right: 5px;
+}
+
+.footer__some__name {
+    margin-bottom: 1px !important;
+}
+
+.footer__follow__links i {
+    cursor: pointer;
+    font-size: 25px;
+    color: #f2c94c;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    margin: 0;
+    background-color: #2a2924;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 45px;
+}
+
+@media only screen and (max-width: 850px) {
+    .footer__container {
+        min-height: 700px;
+        max-height: 700px;
+    }
+    .footer__grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 600px;
+    }
+    
+    .footer__info {
+        padding: 0 0 25px 0;
+        width: 210px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .footer__container {
+        min-height: 1000px;
+        max-height: 1000px;
+    }
+    .footer__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__info {
+        padding: 20px;
+    }
+}

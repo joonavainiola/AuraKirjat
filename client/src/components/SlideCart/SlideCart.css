@@ -1,0 +1,157 @@
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-shopping-cart {
+    position: relative;
+}
+
+.cart-item-length {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    padding: 2px 0 0 1px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #c39509;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    right: -14px;
+    top: -12px;
+}
+
+.cart-bar {
+    background: none;
+    text-decoration: none;
+    color: #2a2924;
+}
+
+.cart-overlay {
+    background: rgba(242, 201, 76, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: 350ms;
+}
+
+.cart-overlay.active {
+    transition: 350ms;
+    z-index: 2;
+    opacity: 1;
+}
+
+.cart-menu {
+    background-color: white;
+    box-shadow: 0 0 15px #2a2924;
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: 550ms;
+    z-index: 3;
+}
+
+.cart-menu.active {
+    right: 0;
+    transition: 350ms;
+}
+
+.cart-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 40px;
+}
+
+.cart-text a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.cart-text a:hover {
+    background-color:gray;
+}
+
+.cart-menu-items {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px 20px 20px;
+}
+
+.cart-toggle {
+    position: absolute;
+    left: -23px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.cart-toggle i {
+    margin: 0;
+    padding: 2px 6px;
+    background: linear-gradient(#cfac40, #c39509);
+    border-radius: 50%;
+    border: 5px solid white;
+    color: white;
+    font-size: 32px;
+}
+
+span {
+    margin-left: 16px;
+}
+
+.button {
+    height: 20px;
+    min-width: 20px ;
+}
+
+@media only screen and (max-width: 750px) {
+    .cart-bar {
+        margin: 0;
+    }
+
+    .cart-bar i {
+        font-size: 30px;
+        color: #f2c94c;
+    }
+
+    .cart-item-length {
+        width: 26px;
+        height: 26px;
+        padding: 0;
+        font-size: 14px;
+        right: -12px;
+        top: -6px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .cart-menu {
+        width: 90%;
+    }
+}

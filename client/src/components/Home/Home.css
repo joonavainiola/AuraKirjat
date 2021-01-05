@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+.home__container {
+    padding: 3px;
+}
+
+.home__offer {
+    height: 40vw;
+    width: 100%;
+    background-image: url('../../xmas_yellow.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    background-size: cover;
+    transition: 0.35s;
+}
+
+.home__offer:hover {
+    cursor: default;
+    background-image: url('../../xmas.jpg');
+}
+
+.home__offer__text {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.merryxmas {
+    text-align: left;
+    margin: 0 0 40px 10%;
+    transform: rotate(-10deg);
+}
+
+.merryxmas__crazy {
+    margin: 0 0 -12px 12px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2.1vw;
+    color: #2a2924;
+    text-transform: uppercase;
+}
+
+.merryxmas__merryxmas {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.6vw;
+    font-weight: bold;
+    color: #c54245;
+    -webkit-text-fill-color: #c54245; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.merryxmas__merry {
+    margin: 0;
+    text-decoration-line: line-through;
+    text-decoration-color: #2a2924;
+}
+
+.xmasoffer {
+    background-image: url('../../oksa.png');
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-size: contain;
+    color: #2a2924;
+    text-transform: uppercase;
+    width: 34vw;
+    min-width: 350px;
+    margin: 0 0 0 3%;
+}
+
+.xmasoffer__border {
+    border: 4px solid white;
+    padding: 4px;
+    height: 18vw;
+    min-height: 220px;
+    width: 18vw;
+    min-width: 220px;
+    margin: 0 auto;
+}
+
+.xmasoffer__text {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.xmasoffer__percentage {
+    margin: 0;
+    font-weight: bold;
+    font-size: 75px;
+    letter-spacing: -3px;
+    color: #f2c94c;
+    margin-left: -5px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px #2a2924;
+}
+
+.xmasoffer__products {
+    margin: -4px 0 2px 0;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+
+.xmasoffer__products span {
+    margin: 0;
+    color: #c54245;
+    font-weight: bold;
+}
+
+.xmasoffer__code {
+    margin: 0;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+
+.xmasoffer__code span {
+    margin: 0;
+    color: #c54245;
+    font-weight: bold;
+}
+
+.xmasoffer__date {
+    text-transform: none;
+    margin: 0;
+    position: absolute;
+    color: #888;
+    bottom: 5px;
+    font-size: 13px;
+}
+
+.home__book {
+    padding: 40px 17px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home__book__aura {
+    text-align: left;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #f2c94c;
+}
+
+.home__book__aura p {
+    margin: 0 0 0 1.5px;
+    color: #888;
+}
+
+.home__book__aura h1 {
+    margin: 0;
+}
+
+.home__bookinfo {
+    display: flex;
+    padding: 25px;
+    background-color: #f7f7f7;
+}
+
+.home__bookinfo p {
+    color: #888;
+    margin: 2px 0;
+}
+
+.home__bookinfo p span {
+    margin: 0;
+    color: #2a2924;
+    font-weight: bold;
+}
+
+.home__bookinfo__img {
+    min-width: 280px;
+    max-width: 280px;
+}
+
+.home__bookinfo__img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 80%;
+}
+
+.home__bookinfo__info {
+    text-align: left;
+    padding-left: 30px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.home__bookinfo__name {
+    margin-top: -7px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.home__bookinfo__year {
+    margin-bottom: 10px;
+}
+
+.home__bookinfo__price {
+    color: #f2c94c;
+    margin: 15px 0 0 0;
+}
+
+.home__bookinfo__desc {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.home__bookinfo__desctext {
+    text-align: left;
+}
+
+.home__bookinfo__button {
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(#fcdd7f, #f2c94c);
+    color: #2a2924;
+    margin-top: 20px;
+    padding: 0 10px;
+    height: 38px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.home__bookinfo__button:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .home__offer {
+        background-image: url('../../xmas_small.jpg');
+        background-position: 100% 100%;
+        height: 600px;
+        transition: 0s;
+    }
+
+    .home__offer:hover {
+        cursor: default;
+        background-image: url('../../xmas_small.jpg');
+    }
+
+    .home__offer__text {
+        background-color: rgba(42, 41, 36, 0.15);
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .merryxmas {
+        margin: 40px 0;
+    }
+
+    .merryxmas__crazy {
+        color: #2a2924;
+        font-size: 22px;
+    }
+
+    .merryxmas__merryxmas {
+        font-size: 38px;
+    }
+
+    .xmasoffer {
+        margin: 0;
+    }
+
+    .home__bookinfo {
+        padding: 15px;
+    }
+
+    .home__bookinfo__img {
+        min-width: 200px;
+        max-width: 200px;
+    }
+
+    .home__bookinfo__img img {
+        height: 240px;
+    }
+
+    .home__bookinfo__info {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .home__bookinfo {
+        flex-direction: column;
+    }
+
+    .home__bookinfo__img {
+        min-width: 260px;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .home__bookinfo__img img {
+        height: 280px;
+    }
+
+    .home__bookinfo__info {
+        padding: 20px 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .home__offer {
+        height: 80vh;
+    }
+
+    .merryxmas__crazy {
+        font-size: 32px;
+    }
+    
+    .merryxmas__merryxmas {
+        font-size: 52px;
+    }
+
+    .xmasoffer {
+        width: 510px;
+    }
+    
+    .xmasoffer__border {
+        height: 270px;
+        width: 270px;
+    }
+}

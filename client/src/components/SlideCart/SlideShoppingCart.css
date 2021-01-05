@@ -1,0 +1,120 @@
+.shoppingcart {
+    height: 100%;
+}
+
+.shoppingcart__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83px;
+    color: #666;
+}
+
+.shoppingcart__items {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    max-height: 60%;
+    overflow: scroll;
+}
+
+.shoppingcart__item:not(:last-child) {
+    border-bottom: 1px solid lightgrey;
+}
+
+.shoppingcart__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 80px;
+    background-color: #f8f8f8;
+}
+
+.shoppingcart__item__img {
+    min-width: 80px;
+    max-width: 80px;
+    height: 100%;
+}
+
+.shoppingcart__item__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+}
+
+.shoppingcart__item__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 5px 0 8px;
+    height: 100%;
+    width: 100%;
+    color: #2a2924;
+}
+
+.shoppingcart__item__info .fa-trash {
+    position: absolute;
+    font-size: 22px;
+    color: #666;
+    right: 9px;
+    bottom: 9px;
+    cursor: pointer;
+}
+
+.shoppingcart__item__name {
+    margin: 5px 0 0 0;
+    font-weight: bold;
+}
+
+.shoppingcart__item__author {
+    margin: 0;
+    font-size: 15px;
+    color: #666;
+}
+
+.shoppingcart__item__price {
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #c39509;
+    font-size: 19px;
+}
+
+.shoppingcart__sum {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+}
+
+.shoppingcart__tax {
+    display: flex;
+    font-size: 10px;
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+}
+
+.shoppingcart__button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(#fcdd7f, #f2c94c);
+    color: #2a2924;
+    padding: 0 10px;
+    height: 38px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.shoppingcart__infotext {
+    border-top: 1px solid lightgrey;
+    padding-top: 25px;
+    margin: 0;
+}

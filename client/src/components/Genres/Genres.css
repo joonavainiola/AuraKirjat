@@ -1,0 +1,18 @@
+.grey {
+    color: #c8c8c8;
+}
+
+.books__results__arrange {
+    display: flex;
+    margin: 25px 10px 15px;
+}
+
+#arrange {
+    padding: 5px 2px;
+    width: 150px;
+    text-align: left;
+}
+
+#arrange:focus {
+    outline: none;
+}
